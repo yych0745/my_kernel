@@ -1,0 +1,8 @@
+{
+  "source_dir": "/home/hadoop-hmart-peisongpa/test/my_kernel",
+  "build_dir": "/home/hadoop-hmart-peisongpa/test/my_kernel/build",
+  "cmake_path": "/home/hadoop-hmart-peisongpa/.local/lib/python3.9/site-packages/cmake/data/bin/cmake",
+  "skbuild_path": "/home/hadoop-hmart-peisongpa/.local/lib/python3.9/site-packages/scikit_build_core",
+  "skbuild_version": "0.11.1",
+  "python_executable": "/usr/local/bin/python3"
+}

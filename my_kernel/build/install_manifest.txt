@@ -1,0 +1,1 @@
+/home/hadoop-hmart-peisongpa/test/my_kernel/python/my_kernel/common_ops.abi3.so

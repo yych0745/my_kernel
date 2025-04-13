@@ -1,0 +1,6 @@
+# ninja log v5
+67228	67626	1744533191103713920	common_ops.abi3.so	e836007cf896dcdc
+14	12657	1744532220771626830	CMakeFiles/common_ops.dir/csrc/common_extension.cc.o	80e93d0eb8c7fd31
+14	67227	1744533190688725011	CMakeFiles/common_ops.dir/csrc/kernel.cu.o	999814b74770e86f
+13	67149	1744534654812509582	CMakeFiles/common_ops.dir/csrc/kernel.cu.o	999814b74770e86f
+67149	67547	1744534655227498422	common_ops.abi3.so	e836007cf896dcdc

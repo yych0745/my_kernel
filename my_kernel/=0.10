@@ -1,0 +1,7 @@
+Defaulting to user installation because normal site-packages is not writeable
+Looking in indexes: http://pip.sankuai.com/simple/, http://pypi.sankuai.com/simple/
+Requirement already satisfied: scikit-build-core in /home/hadoop-hmart-peisongpa/.local/lib/python3.9/site-packages (0.11.1)
+Requirement already satisfied: exceptiongroup>=1.0 in /usr/local/lib/python3.9/site-packages (from scikit-build-core) (1.2.0)
+Requirement already satisfied: packaging>=23.2 in /home/hadoop-hmart-peisongpa/.local/lib/python3.9/site-packages (from scikit-build-core) (24.2)
+Requirement already satisfied: pathspec>=0.10.1 in /home/hadoop-hmart-peisongpa/.local/lib/python3.9/site-packages (from scikit-build-core) (0.12.1)
+Requirement already satisfied: tomli>=1.2.2 in /home/hadoop-hmart-peisongpa/.local/lib/python3.9/site-packages (from scikit-build-core) (2.2.1)

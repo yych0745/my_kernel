@@ -1,0 +1,7 @@
+/home/hadoop-hmart-peisongpa/test/my_kernel/build/CMakeFiles/common_ops.dir
+/home/hadoop-hmart-peisongpa/test/my_kernel/build/CMakeFiles/edit_cache.dir
+/home/hadoop-hmart-peisongpa/test/my_kernel/build/CMakeFiles/rebuild_cache.dir
+/home/hadoop-hmart-peisongpa/test/my_kernel/build/CMakeFiles/list_install_components.dir
+/home/hadoop-hmart-peisongpa/test/my_kernel/build/CMakeFiles/install.dir
+/home/hadoop-hmart-peisongpa/test/my_kernel/build/CMakeFiles/install/local.dir
+/home/hadoop-hmart-peisongpa/test/my_kernel/build/CMakeFiles/install/strip.dir
