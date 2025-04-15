@@ -51,10 +51,10 @@ class TestKernel(unittest.TestCase):
 def test_one_kernel():
     torch.manual_seed(0)
     M = 16
-    N = 8
+    N = 16
     K = 16
-    a = torch.randn(M, K, dtype=torch.half, device='cuda') + 1
-    b = torch.randn(N, K, dtype=torch.half, device='cuda') + 1
+    a = torch.randn(M, K, dtype=torch.half, device='cuda')
+    b = torch.randn(N, K, dtype=torch.half, device='cuda')
     c = torch.zeros(a.shape[0], b.shape[0], dtype=torch.half, device='cuda')
     print(a[0][0])
     kernel3(a, b.T, c)
@@ -63,7 +63,9 @@ def test_one_kernel():
     print(a[8:, :8])
     print(a[:8, 8:])
     print(a[8:, 8:])
-    print(b.T)
+    x = b.T
+    print(x[:,8:])
+    print(x)
     # c = torch.cat([c[1:8], c[9:]], dim=0)
     # ref_c = torch.cat([ref_c[1:8], ref_c[9:]], dim=0)
     for i in range(c.shape[0]):
