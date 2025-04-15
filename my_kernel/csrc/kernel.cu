@@ -1,13 +1,11 @@
-#include <cuda_runtime.h>
-#include <torch/all.h>
-
+#include "utils.h"
 // A: (rows, cols) 
 // B: (cols, rows)
 template <int block_n>  // 标准模板参数格式
 __global__ void matmul_kernel(
-    const float* a,
-    const float* b,
-    float* c,
+    const half* a,
+    const half* b,
+    half* c,
     const int a_rows,
     const int a_cols,
     const int b_rows,
@@ -41,10 +39,6 @@ __global__ void matmul_kernel(
     }
 }
 
-constexpr int ceildiv(int a, int b) {
-    return (a + b - 1) / b;
-}
-
 void matmul(
     torch::Tensor a,
     torch::Tensor b,
@@ -55,9 +49,9 @@ void matmul(
     int blocks = b.size(1);
     // 单block处理4行
     matmul_kernel<8><<<blocks, 256, shared_mem_size, 0>>>(
-            a.data_ptr<float>(),
-            b.data_ptr<float>(),
-            c.data_ptr<float>(),
+            reinterpret_cast<half*>(a.data_ptr<at::Half>()),
+            reinterpret_cast<half*>(b.data_ptr<at::Half>()),
+            reinterpret_cast<half*>(c.data_ptr<at::Half>()),
             a.size(0),
             a.size(1),
             b.size(1),

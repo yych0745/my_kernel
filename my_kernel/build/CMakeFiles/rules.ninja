@@ -52,7 +52,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/hadoop-hmart-peisongpa/.local/lib/python3.9/site-packages/cmake/data/bin/cmake --regenerate-during-build -S/home/hadoop-hmart-peisongpa/test/my_kernel -B/home/hadoop-hmart-peisongpa/test/my_kernel/build
+  command = /home/hadoop-hmart-peisongpa/.local/lib/python3.9/site-packages/cmake/data/bin/cmake --regenerate-during-build -S/home/hadoop-hmart-peisongpa/my_kernel/my_kernel -B/home/hadoop-hmart-peisongpa/my_kernel/my_kernel/build
   description = Re-running CMake...
   generator = 1
 

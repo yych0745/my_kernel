@@ -1,6 +1,9 @@
 # ninja log v5
-67228	67626	1744533191103713920	common_ops.abi3.so	e836007cf896dcdc
-14	12657	1744532220771626830	CMakeFiles/common_ops.dir/csrc/common_extension.cc.o	80e93d0eb8c7fd31
-14	67227	1744533190688725011	CMakeFiles/common_ops.dir/csrc/kernel.cu.o	999814b74770e86f
-13	67149	1744534654812509582	CMakeFiles/common_ops.dir/csrc/kernel.cu.o	999814b74770e86f
-67149	67547	1744534655227498422	common_ops.abi3.so	e836007cf896dcdc
+15	12606	1744698026728408763	CMakeFiles/common_ops.dir/csrc/common_extension.cc.o	4c83bcb5b44ea420
+15	52298	1744698335033335827	CMakeFiles/common_ops.dir/csrc/kernel_warp.cu.o	27c84819aa811062
+51564	51959	1744702189027840969	common_ops.abi3.so	78534352cc6dcf43
+15	52370	1744698335106333923	CMakeFiles/common_ops.dir/csrc/kernel.cu.o	977fe3ff865729e0
+14	51222	1744698531799200011	CMakeFiles/common_ops.dir/csrc/kernel_naive.cu.o	82a45024fee5c6bc
+15	51564	1744702188617851908	CMakeFiles/common_ops.dir/csrc/kernel_ptx.cu.o	1fd4d1514f7514d1
+15	51529	1744702535075557977	CMakeFiles/common_ops.dir/csrc/kernel_ptx.cu.o	1fd4d1514f7514d1
+51529	51931	1744702535491546797	common_ops.abi3.so	78534352cc6dcf43

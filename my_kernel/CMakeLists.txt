@@ -55,7 +55,7 @@ set(SGL_KERNEL_CUDA_FLAGS
     "-Xcompiler"
     "-fPIC"
     # "-gencode=arch=compute_75,code=sm_75"
-    "-gencode=arch=compute_80,code=sm_80"
+    # "-gencode=arch=compute_80,code=sm_80"
     "-gencode=arch=compute_89,code=sm_89"
     "-gencode=arch=compute_90,code=sm_90"
     "-std=c++17"
@@ -122,6 +122,9 @@ string(REPLACE "-D__CUDA_NO_HALF2_OPERATORS__"      "" CMAKE_CUDA_FLAGS "${CMAKE
 
 set(SOURCES
     "csrc/kernel.cu"
+    "csrc/kernel_warp.cu"
+    "csrc/kernel_ptx.cu"
+    "csrc/kernel_naive.cu"
     "csrc/common_extension.cc"
 )
 

@@ -77,3 +77,6 @@ void register_graph_buffers(
 #endif
 
 void matmul(torch::Tensor a, torch::Tensor b, torch::Tensor c);
+void matmul_warp(torch::Tensor a, torch::Tensor b, torch::Tensor c);
+void matmul_ptx(torch::Tensor a, torch::Tensor b, torch::Tensor c);
+void matmul_naive(torch::Tensor a, torch::Tensor b, torch::Tensor c);
